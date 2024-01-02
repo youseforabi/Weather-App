@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+   <link rel="stylesheet" href="css/all.min.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/caontact.css">
+</head>
+<body>
+    
+<header>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg p-4 ">
+    <div class="container ">
+      <div class="d-flex ">
+      <img class="mt-2 me-3 logo"  src="/images/logo" alt="logo" width="64" height="38">
+        <div class="d-flex flex-column">
+          <a class="navbar-brand text-white" href="#">Company Name  </a>
+          <small class="site-desc">tagline goes here</small>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse p-1" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active item" aria-current="page"  id="homePage">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link item" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link item" href="#">Live Camera</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link item" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link item1" href="#">Contact</a>
+          </li>        
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- section -->
+ <section class="section ">
+     <div class="container">
+        <div class="home-contact">
+            <a href="index.html">Home</a>
+            <img src="/images/arrow-gray.png" class="m-2" alt="">
+            <span>Conatct</span>
+        </div>
+        <div class="row mt-4 ms-5">
+            <div class="col-lg-6 col-md-12 mt-4">
+                <div class=" d-block" id="map" src="" class="map" frameborder="0" ></div>
+                <div class="d-flex">
+                    <i class="fa-solid fa-location-dot me-2 mt-3 fs-4"></i>
+                    <p class="mt-1">Company Name INC <br>2803 Avenue Street ,los anglos</p>
+                </div>
+                <div class="d-flex">
+                    <i class="fa-solid fa-phone mt-1 me-2"></i>
+                    <p>+2533654</p>
+                    <i class="fa-solid fa-envelope ms-3 mt-1 me-2"></i>
+                    <p>contact@company.com</p>
+                </div>
+                
+            </div>
+            <div class="col-lg-6 col-md-12 mt-4" >
+                <h1 class="mb-3 text-white">Contact Us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Your Name...">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Email Address...">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Company Name...">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Website...">
+                        </div>
+                        <div class="col-md-12">
+                            <textarea name="" id="">Messege</textarea>
+                        </div>
+                    </div>
+                    <input type="submit" >Submit</input>
+                </form>
+            </div>
+        </div>
+    </div>
+ </section>
+<!-- footer -->
+<footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <form action="#" class="subscribe-form">
+              <input type="" placeholder="Enter your email to subscribe...">
+              <button class="last-input">Subscribe</button>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <div class="social-links">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-google"></i>
+              <i class="fa-brands fa-github"></i> 
+            </div>
+          </div>
+        </div>
+        <p class="last-para">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </footer> 
+<script src="js/bootstrap.bundle.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwjQ_iKoNn6DmjVSR-SSqJqBXcJEKPjqQ&callback=initMap"></script>
+<script src="js/contact.js"></script>
+
+</body>
+</html>
