@@ -1,10 +1,10 @@
 
 let homePage = document.getElementById("homePage").addEventListener("click" , function(){
-    window.open("index.html" , "_self");
+    window.open("../index.html" , "_self");
 })
 
 let logo =document.querySelector(".logo").addEventListener("click" , function(){
-    window.open("index.html" , "_self");
+    window.open("../index.html" , "_self");
 })
 
 
