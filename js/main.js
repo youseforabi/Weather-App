@@ -1,10 +1,10 @@
 // going to contact page when pressing on contact
 let contactPage = document.getElementById("contactPage").addEventListener("click",function(){
-  window.open("/contact.html" , "_self");
+  window.open("contact.html" , "_self");
 })
 // going to main page when pressing on the logo
 let logo =document.querySelector(".logo").addEventListener("click" , function(){
-  window.open("/index.html" , "_self");
+  window.open("index.html" , "_self");
 })
 // get the written text from the input field and assign it to a variable
 let text = document.getElementById("cityInput");
@@ -19,7 +19,7 @@ let day1 = document.querySelector(".day1");
 let date1 = document.querySelector(".date1");
 // set variable for day 2
 let day2 =document.querySelector(".day2");
-let image2 = document.querySelector(".forcast-content .sec-img img")
+let image2 = document.querySelector(".forcast-content .degree2 img")
 let degreeElement2 = document.querySelector('.degree .max-num2');
 let degreeElement22 = document.querySelector(".degree .min-num2");
 let custom2 = document.querySelector(".custom2");
@@ -46,6 +46,7 @@ async function getWeather(theRes){
         // the icon 1
         let currentImg = currentData.current.condition.icon;
         imgge.src=currentImg;
+        
 
 
         // date 1
@@ -88,7 +89,7 @@ async function getWeather(theRes){
         // the speed of the wind 1
         let currentWind = currentData.current.wind_kph;
         secSpan.innerHTML = `<span class="fir-span">
-        <img src="wind.png" alt="">
+        <img src="/images/wind.png" alt="">
         ${currentWind} km/h
       </span>`;
 
@@ -119,7 +120,7 @@ async function getWeather(theRes){
          let minTemp2 = currentData.forecast.forecastday[1].day.mintemp_c;
           degreeElement22.innerHTML = minTemp2 +`<sub class="sub">o</sub> C` ;
      
-         // the state of the weahther 1
+         // the state of the weahther 2
         let sectSate = currentData.forecast.forecastday[1].day.condition.text;
         custom2.innerHTML = sectSate;
 
@@ -159,6 +160,4 @@ async function getWeather(theRes){
    }
    
 }
-
-
 getWeather("cairo")
