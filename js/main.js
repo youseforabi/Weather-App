@@ -1,8 +1,3 @@
-
-// going to main page when pressing on the logo
-let logo =document.querySelector(".logo").addEventListener("click" , function(){
-  window.open("index.html" , "_self");
-})
 // get the written text from the input field and assign it to a variable
 let text = document.getElementById("cityInput");
 // set variable for day 1
