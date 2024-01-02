@@ -1,7 +1,4 @@
-// going to contact page when pressing on contact
-let contactPage = document.getElementById("contactPage").addEventListener("click",function(){
-  window.open("contact.html" , "_self");
-})
+
 // going to main page when pressing on the logo
 let logo =document.querySelector(".logo").addEventListener("click" , function(){
   window.open("index.html" , "_self");
