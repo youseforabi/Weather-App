@@ -1,10 +1,10 @@
 // going to contact page when pressing on contact
 let contactPage = document.getElementById("contactPage").addEventListener("click",function(){
-  window.open("contact.html" , "_self");
+  window.open("../contact.html" , "_self");
 })
 // going to main page when pressing on the logo
 let logo =document.querySelector(".logo").addEventListener("click" , function(){
-  window.open("index.html" , "_self");
+  window.open("../index.html" , "_self");
 })
 // get the written text from the input field and assign it to a variable
 let text = document.getElementById("cityInput");
