@@ -33,15 +33,15 @@ function initMap() {
           // Handle other types of geolocation errors
           console.error("Error getting user location:", error);
         }
+        
+        // Display a message indicating location access is not available
+        alert("Unable to access your location. Please enable location access in your browser settings.");
       }
     );
   } else {
     console.error("Geolocation is not supported by this browser.");
-  }
-}
-    );
-  } else {
-    // Handle the case when geolocation is not supported
-    console.error("Geolocation is not supported by this browser.");
+    
+    // Display a message indicating geolocation is not supported
+    alert("Geolocation is not supported by your browser.");
   }
 }
