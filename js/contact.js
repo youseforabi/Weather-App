@@ -6,7 +6,9 @@ function initMap() {
  map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: -34.397, lng: 150.644 },
     zoom: 6,
- });
+ },    
+  let marker = new google.maps.Marker({ position: loc, map: map });
+  );
  infoWindow = new google.maps.InfoWindow();
  geocoder = new google.maps.Geocoder();
 
@@ -22,6 +24,8 @@ function initMap() {
         infoWindow.setContent("Location found.");
         infoWindow.open(map);
         map.setCenter(pos);
+        let marker = new google.maps.Marker({ position: loc, map: map });
+
       },
       () => {
         handleLocationError(true, infoWindow, map.getCenter());
